@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		485A12DA21D4F9BC004F4ED6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A12D921D4F9BC004F4ED6 /* AppDelegate.swift */; };
+		485A12DF21D4F9BC004F4ED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485A12DD21D4F9BC004F4ED6 /* Main.storyboard */; };
+		485A12E221D4F9BC004F4ED6 /* Memo_Viper_Demp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 485A12E021D4F9BC004F4ED6 /* Memo_Viper_Demp.xcdatamodeld */; };
+		485A12E421D4F9BF004F4ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485A12E321D4F9BF004F4ED6 /* Assets.xcassets */; };
+		485A12E721D4F9BF004F4ED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485A12E521D4F9BF004F4ED6 /* LaunchScreen.storyboard */; };
+		485A12F221D4F9C0004F4ED6 /* Memo_Viper_DempTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A12F121D4F9C0004F4ED6 /* Memo_Viper_DempTests.swift */; };
+		485A12FE21D4FA5B004F4ED6 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A12FD21D4FA5B004F4ED6 /* EndPoints.swift */; };
+		485A130021D4FBE7004F4ED6 /* PersistenceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A12FF21D4FBE7004F4ED6 /* PersistenceError.swift */; };
+		485A130721D4FD53004F4ED6 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A130621D4FD53004F4ED6 /* PostModel.swift */; };
+		485A130D21D5037D004F4ED6 /* PostListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A130C21D5037D004F4ED6 /* PostListLocalDataManager.swift */; };
+		485A131021D503C7004F4ED6 /* PostListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A130F21D503C7004F4ED6 /* PostListProtocols.swift */; };
+		485A131221D504EE004F4ED6 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A131121D504EE004F4ED6 /* CoreDataStore.swift */; };
+		485A131421D50776004F4ED6 /* PostListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A131321D50776004F4ED6 /* PostListRemoteDataManager.swift */; };
+		485A131721D50D54004F4ED6 /* PostListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A131621D50D54004F4ED6 /* PostListInteractor.swift */; };
+		485A131A21D5121F004F4ED6 /* PostListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A131921D5121F004F4ED6 /* PostListPresenter.swift */; };
+		485A131D21D51384004F4ED6 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A131C21D51384004F4ED6 /* PostListView.swift */; };
+		485A131F21D515F4004F4ED6 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A131E21D515F4004F4ED6 /* PostTableViewCell.swift */; };
+		48704F1021D5CA2B00187DA1 /* Model+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48704F0F21D5CA2B00187DA1 /* Model+Alamofire.swift */; };
+		48704F1321D5D07300187DA1 /* PostListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48704F1221D5D07300187DA1 /* PostListWireFrame.swift */; };
+		48704F1A21D5E72C00187DA1 /* PostDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48704F1921D5E72C00187DA1 /* PostDetailProtocols.swift */; };
+		48704F1C21D5E84700187DA1 /* PostDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48704F1B21D5E84700187DA1 /* PostDetailPresenter.swift */; };
+		48704F1E21D5E8B300187DA1 /* PostDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48704F1D21D5E8B300187DA1 /* PostDetailWireFrame.swift */; };
+		48704F2021D5E8F200187DA1 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48704F1F21D5E8F200187DA1 /* PostDetailView.swift */; };
+		AA9CEB8E473819F3FEEAA249 /* Pods_Memo_Viper_DempTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F101FA3A422EA359F3680DE /* Pods_Memo_Viper_DempTests.framework */; };
+		E70C451E9DD0A27EC3345290 /* Pods_Memo_Viper_Demp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542A5A243FCF1DFAD70BBCE3 /* Pods_Memo_Viper_Demp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		485A12EE21D4F9C0004F4ED6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 485A12CE21D4F9BC004F4ED6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 485A12D521D4F9BC004F4ED6;
+			remoteInfo = "Memo-Viper-Demp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E3AF3454BDDD20B33EB9ED6 /* Pods-Memo-Viper-Demp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo-Viper-Demp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Memo-Viper-Demp/Pods-Memo-Viper-Demp.release.xcconfig"; sourceTree = "<group>"; };
+		485A12D621D4F9BC004F4ED6 /* Memo-Viper-Demp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memo-Viper-Demp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		485A12D921D4F9BC004F4ED6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		485A12DE21D4F9BC004F4ED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		485A12E121D4F9BC004F4ED6 /* Memo_Viper_Demp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Memo_Viper_Demp.xcdatamodel; sourceTree = "<group>"; };
+		485A12E321D4F9BF004F4ED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		485A12E621D4F9BF004F4ED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		485A12E821D4F9BF004F4ED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		485A12ED21D4F9C0004F4ED6 /* Memo-Viper-DempTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Memo-Viper-DempTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		485A12F121D4F9C0004F4ED6 /* Memo_Viper_DempTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo_Viper_DempTests.swift; sourceTree = "<group>"; };
+		485A12F321D4F9C0004F4ED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		485A12FD21D4FA5B004F4ED6 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		485A12FF21D4FBE7004F4ED6 /* PersistenceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceError.swift; sourceTree = "<group>"; };
+		485A130621D4FD53004F4ED6 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		485A130C21D5037D004F4ED6 /* PostListLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListLocalDataManager.swift; sourceTree = "<group>"; };
+		485A130F21D503C7004F4ED6 /* PostListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListProtocols.swift; sourceTree = "<group>"; };
+		485A131121D504EE004F4ED6 /* CoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+		485A131321D50776004F4ED6 /* PostListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListRemoteDataManager.swift; sourceTree = "<group>"; };
+		485A131621D50D54004F4ED6 /* PostListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListInteractor.swift; sourceTree = "<group>"; };
+		485A131921D5121F004F4ED6 /* PostListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListPresenter.swift; sourceTree = "<group>"; };
+		485A131C21D51384004F4ED6 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		485A131E21D515F4004F4ED6 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		48704F0F21D5CA2B00187DA1 /* Model+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Alamofire.swift"; sourceTree = "<group>"; };
+		48704F1221D5D07300187DA1 /* PostListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListWireFrame.swift; sourceTree = "<group>"; };
+		48704F1921D5E72C00187DA1 /* PostDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailProtocols.swift; sourceTree = "<group>"; };
+		48704F1B21D5E84700187DA1 /* PostDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailPresenter.swift; sourceTree = "<group>"; };
+		48704F1D21D5E8B300187DA1 /* PostDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailWireFrame.swift; sourceTree = "<group>"; };
+		48704F1F21D5E8F200187DA1 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		4987EA7CA04611495E2665CC /* Pods-Memo-Viper-DempTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo-Viper-DempTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Memo-Viper-DempTests/Pods-Memo-Viper-DempTests.debug.xcconfig"; sourceTree = "<group>"; };
+		542A5A243FCF1DFAD70BBCE3 /* Pods_Memo_Viper_Demp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memo_Viper_Demp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F101FA3A422EA359F3680DE /* Pods_Memo_Viper_DempTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memo_Viper_DempTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE0F58ED6653287F97B8014D /* Pods-Memo-Viper-DempTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo-Viper-DempTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Memo-Viper-DempTests/Pods-Memo-Viper-DempTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5DA9FA85F027D3DC58A7D00 /* Pods-Memo-Viper-Demp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo-Viper-Demp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Memo-Viper-Demp/Pods-Memo-Viper-Demp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		485A12D321D4F9BC004F4ED6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E70C451E9DD0A27EC3345290 /* Pods_Memo_Viper_Demp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485A12EA21D4F9C0004F4ED6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA9CEB8E473819F3FEEAA249 /* Pods_Memo_Viper_DempTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		485A12CD21D4F9BC004F4ED6 = {
+			isa = PBXGroup;
+			children = (
+				485A12D821D4F9BC004F4ED6 /* Memo-Viper-Demp */,
+				485A12F021D4F9C0004F4ED6 /* Memo-Viper-DempTests */,
+				485A12D721D4F9BC004F4ED6 /* Products */,
+				80406962CA5C9EC69FE56EEC /* Pods */,
+				9E36DCADDB58C20F10B848AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		485A12D721D4F9BC004F4ED6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				485A12D621D4F9BC004F4ED6 /* Memo-Viper-Demp.app */,
+				485A12ED21D4F9C0004F4ED6 /* Memo-Viper-DempTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		485A12D821D4F9BC004F4ED6 /* Memo-Viper-Demp */ = {
+			isa = PBXGroup;
+			children = (
+				485A12FC21D4FA4A004F4ED6 /* Common */,
+				485A130121D4FC5C004F4ED6 /* Entities */,
+				485A130821D50341004F4ED6 /* PostList */,
+				48704F1421D5E6DA00187DA1 /* PostDetail */,
+				485A12D921D4F9BC004F4ED6 /* AppDelegate.swift */,
+				485A12DD21D4F9BC004F4ED6 /* Main.storyboard */,
+				485A12E321D4F9BF004F4ED6 /* Assets.xcassets */,
+				485A12E521D4F9BF004F4ED6 /* LaunchScreen.storyboard */,
+				485A12E821D4F9BF004F4ED6 /* Info.plist */,
+				485A12E021D4F9BC004F4ED6 /* Memo_Viper_Demp.xcdatamodeld */,
+				485A131121D504EE004F4ED6 /* CoreDataStore.swift */,
+			);
+			path = "Memo-Viper-Demp";
+			sourceTree = "<group>";
+		};
+		485A12F021D4F9C0004F4ED6 /* Memo-Viper-DempTests */ = {
+			isa = PBXGroup;
+			children = (
+				485A12F121D4F9C0004F4ED6 /* Memo_Viper_DempTests.swift */,
+				485A12F321D4F9C0004F4ED6 /* Info.plist */,
+			);
+			path = "Memo-Viper-DempTests";
+			sourceTree = "<group>";
+		};
+		485A12FC21D4FA4A004F4ED6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				485A12FD21D4FA5B004F4ED6 /* EndPoints.swift */,
+				485A12FF21D4FBE7004F4ED6 /* PersistenceError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		485A130121D4FC5C004F4ED6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				48704F0F21D5CA2B00187DA1 /* Model+Alamofire.swift */,
+				485A130621D4FD53004F4ED6 /* PostModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		485A130821D50341004F4ED6 /* PostList */ = {
+			isa = PBXGroup;
+			children = (
+				485A130E21D503A8004F4ED6 /* Protocol */,
+				485A130921D5034B004F4ED6 /* DataManager */,
+				485A131B21D5131F004F4ED6 /* View */,
+				485A131821D5120B004F4ED6 /* Presentor */,
+				485A131521D50D41004F4ED6 /* Interactor */,
+				48704F1121D5D06200187DA1 /* Wireframe */,
+			);
+			path = PostList;
+			sourceTree = "<group>";
+		};
+		485A130921D5034B004F4ED6 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				485A130A21D50354004F4ED6 /* Local */,
+				485A130B21D5035A004F4ED6 /* Remote */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		485A130A21D50354004F4ED6 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				485A130C21D5037D004F4ED6 /* PostListLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		485A130B21D5035A004F4ED6 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				485A131321D50776004F4ED6 /* PostListRemoteDataManager.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		485A130E21D503A8004F4ED6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				485A130F21D503C7004F4ED6 /* PostListProtocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		485A131521D50D41004F4ED6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				485A131621D50D54004F4ED6 /* PostListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		485A131821D5120B004F4ED6 /* Presentor */ = {
+			isa = PBXGroup;
+			children = (
+				485A131921D5121F004F4ED6 /* PostListPresenter.swift */,
+			);
+			path = Presentor;
+			sourceTree = "<group>";
+		};
+		485A131B21D5131F004F4ED6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				485A131C21D51384004F4ED6 /* PostListView.swift */,
+				485A131E21D515F4004F4ED6 /* PostTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48704F1121D5D06200187DA1 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				48704F1221D5D07300187DA1 /* PostListWireFrame.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		48704F1421D5E6DA00187DA1 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				48704F1521D5E6EC00187DA1 /* Protocol */,
+				48704F1721D5E70800187DA1 /* Presenter */,
+				48704F1621D5E6F800187DA1 /* View */,
+				48704F1821D5E71300187DA1 /* WireFrame */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		48704F1521D5E6EC00187DA1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				48704F1921D5E72C00187DA1 /* PostDetailProtocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		48704F1621D5E6F800187DA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48704F1F21D5E8F200187DA1 /* PostDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48704F1721D5E70800187DA1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				48704F1B21D5E84700187DA1 /* PostDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		48704F1821D5E71300187DA1 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				48704F1D21D5E8B300187DA1 /* PostDetailWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		80406962CA5C9EC69FE56EEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5DA9FA85F027D3DC58A7D00 /* Pods-Memo-Viper-Demp.debug.xcconfig */,
+				1E3AF3454BDDD20B33EB9ED6 /* Pods-Memo-Viper-Demp.release.xcconfig */,
+				4987EA7CA04611495E2665CC /* Pods-Memo-Viper-DempTests.debug.xcconfig */,
+				BE0F58ED6653287F97B8014D /* Pods-Memo-Viper-DempTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E36DCADDB58C20F10B848AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				542A5A243FCF1DFAD70BBCE3 /* Pods_Memo_Viper_Demp.framework */,
+				6F101FA3A422EA359F3680DE /* Pods_Memo_Viper_DempTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		485A12D521D4F9BC004F4ED6 /* Memo-Viper-Demp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485A12F621D4F9C0004F4ED6 /* Build configuration list for PBXNativeTarget "Memo-Viper-Demp" */;
+			buildPhases = (
+				A406CB3DE559608BACC0BF9F /* [CP] Check Pods Manifest.lock */,
+				485A12D221D4F9BC004F4ED6 /* Sources */,
+				485A12D321D4F9BC004F4ED6 /* Frameworks */,
+				485A12D421D4F9BC004F4ED6 /* Resources */,
+				336224B514B44BB7FC2E9C5F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Memo-Viper-Demp";
+			productName = "Memo-Viper-Demp";
+			productReference = 485A12D621D4F9BC004F4ED6 /* Memo-Viper-Demp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		485A12EC21D4F9C0004F4ED6 /* Memo-Viper-DempTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485A12F921D4F9C0004F4ED6 /* Build configuration list for PBXNativeTarget "Memo-Viper-DempTests" */;
+			buildPhases = (
+				4632FAA1285EFBCC461EF7EF /* [CP] Check Pods Manifest.lock */,
+				485A12E921D4F9C0004F4ED6 /* Sources */,
+				485A12EA21D4F9C0004F4ED6 /* Frameworks */,
+				485A12EB21D4F9C0004F4ED6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				485A12EF21D4F9C0004F4ED6 /* PBXTargetDependency */,
+			);
+			name = "Memo-Viper-DempTests";
+			productName = "Memo-Viper-DempTests";
+			productReference = 485A12ED21D4F9C0004F4ED6 /* Memo-Viper-DempTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		485A12CE21D4F9BC004F4ED6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Aashish Adhikari";
+				TargetAttributes = {
+					485A12D521D4F9BC004F4ED6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					485A12EC21D4F9C0004F4ED6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 485A12D521D4F9BC004F4ED6;
+					};
+				};
+			};
+			buildConfigurationList = 485A12D121D4F9BC004F4ED6 /* Build configuration list for PBXProject "Memo-Viper-Demp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 485A12CD21D4F9BC004F4ED6;
+			productRefGroup = 485A12D721D4F9BC004F4ED6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				485A12D521D4F9BC004F4ED6 /* Memo-Viper-Demp */,
+				485A12EC21D4F9C0004F4ED6 /* Memo-Viper-DempTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		485A12D421D4F9BC004F4ED6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485A12E721D4F9BF004F4ED6 /* LaunchScreen.storyboard in Resources */,
+				485A12E421D4F9BF004F4ED6 /* Assets.xcassets in Resources */,
+				485A12DF21D4F9BC004F4ED6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485A12EB21D4F9C0004F4ED6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		336224B514B44BB7FC2E9C5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Memo-Viper-Demp/Pods-Memo-Viper-Demp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Memo-Viper-Demp/Pods-Memo-Viper-Demp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4632FAA1285EFBCC461EF7EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Memo-Viper-DempTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A406CB3DE559608BACC0BF9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Memo-Viper-Demp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		485A12D221D4F9BC004F4ED6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48704F2021D5E8F200187DA1 /* PostDetailView.swift in Sources */,
+				485A131A21D5121F004F4ED6 /* PostListPresenter.swift in Sources */,
+				48704F1021D5CA2B00187DA1 /* Model+Alamofire.swift in Sources */,
+				48704F1C21D5E84700187DA1 /* PostDetailPresenter.swift in Sources */,
+				48704F1A21D5E72C00187DA1 /* PostDetailProtocols.swift in Sources */,
+				485A131021D503C7004F4ED6 /* PostListProtocols.swift in Sources */,
+				485A130721D4FD53004F4ED6 /* PostModel.swift in Sources */,
+				485A131D21D51384004F4ED6 /* PostListView.swift in Sources */,
+				485A131221D504EE004F4ED6 /* CoreDataStore.swift in Sources */,
+				485A131721D50D54004F4ED6 /* PostListInteractor.swift in Sources */,
+				485A12E221D4F9BC004F4ED6 /* Memo_Viper_Demp.xcdatamodeld in Sources */,
+				485A131421D50776004F4ED6 /* PostListRemoteDataManager.swift in Sources */,
+				48704F1E21D5E8B300187DA1 /* PostDetailWireFrame.swift in Sources */,
+				48704F1321D5D07300187DA1 /* PostListWireFrame.swift in Sources */,
+				485A12FE21D4FA5B004F4ED6 /* EndPoints.swift in Sources */,
+				485A131F21D515F4004F4ED6 /* PostTableViewCell.swift in Sources */,
+				485A130D21D5037D004F4ED6 /* PostListLocalDataManager.swift in Sources */,
+				485A130021D4FBE7004F4ED6 /* PersistenceError.swift in Sources */,
+				485A12DA21D4F9BC004F4ED6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485A12E921D4F9C0004F4ED6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485A12F221D4F9C0004F4ED6 /* Memo_Viper_DempTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		485A12EF21D4F9C0004F4ED6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 485A12D521D4F9BC004F4ED6 /* Memo-Viper-Demp */;
+			targetProxy = 485A12EE21D4F9C0004F4ED6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		485A12DD21D4F9BC004F4ED6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				485A12DE21D4F9BC004F4ED6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		485A12E521D4F9BF004F4ED6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				485A12E621D4F9BF004F4ED6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		485A12F421D4F9C0004F4ED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		485A12F521D4F9C0004F4ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		485A12F721D4F9C0004F4ED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5DA9FA85F027D3DC58A7D00 /* Pods-Memo-Viper-Demp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M95J6R4W33;
+				INFOPLIST_FILE = "Memo-Viper-Demp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aashishadhikari.Memo-Viper-Demp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		485A12F821D4F9C0004F4ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E3AF3454BDDD20B33EB9ED6 /* Pods-Memo-Viper-Demp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M95J6R4W33;
+				INFOPLIST_FILE = "Memo-Viper-Demp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aashishadhikari.Memo-Viper-Demp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		485A12FA21D4F9C0004F4ED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4987EA7CA04611495E2665CC /* Pods-Memo-Viper-DempTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M95J6R4W33;
+				INFOPLIST_FILE = "Memo-Viper-DempTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aashishadhikari.Memo-Viper-DempTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memo-Viper-Demp.app/Memo-Viper-Demp";
+			};
+			name = Debug;
+		};
+		485A12FB21D4F9C0004F4ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE0F58ED6653287F97B8014D /* Pods-Memo-Viper-DempTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M95J6R4W33;
+				INFOPLIST_FILE = "Memo-Viper-DempTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aashishadhikari.Memo-Viper-DempTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memo-Viper-Demp.app/Memo-Viper-Demp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		485A12D121D4F9BC004F4ED6 /* Build configuration list for PBXProject "Memo-Viper-Demp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485A12F421D4F9C0004F4ED6 /* Debug */,
+				485A12F521D4F9C0004F4ED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		485A12F621D4F9C0004F4ED6 /* Build configuration list for PBXNativeTarget "Memo-Viper-Demp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485A12F721D4F9C0004F4ED6 /* Debug */,
+				485A12F821D4F9C0004F4ED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		485A12F921D4F9C0004F4ED6 /* Build configuration list for PBXNativeTarget "Memo-Viper-DempTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485A12FA21D4F9C0004F4ED6 /* Debug */,
+				485A12FB21D4F9C0004F4ED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		485A12E021D4F9BC004F4ED6 /* Memo_Viper_Demp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				485A12E121D4F9BC004F4ED6 /* Memo_Viper_Demp.xcdatamodel */,
+			);
+			currentVersion = 485A12E121D4F9BC004F4ED6 /* Memo_Viper_Demp.xcdatamodel */;
+			path = Memo_Viper_Demp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 485A12CE21D4F9BC004F4ED6 /* Project object */;
+}
